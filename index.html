@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AG CraftNode — Download | Run Your Own Minecraft Server</title>
+  <meta name="description" content="Download AG CraftNode — a local Minecraft server manager. Create, configure and run Minecraft servers from a desktop app. Supports cracked Minecraft.">
+  <link rel="icon" href="assets/icon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a class="nav-brand" href="#top">
+      <img src="assets/icon.ico" alt="AG CraftNode logo" class="nav-logo">
+      <span>AG&nbsp;CraftNode</span>
+    </a>
+    <div class="nav-links">
+      <a href="#download">Download</a>
+      <a href="#features">Features</a>
+      <a href="#quickstart">Quick&nbsp;Start</a>
+      <a href="#project">Project</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <div class="badges">
+          <span class="badge badge-green">v0.0.1</span>
+          <span class="badge badge-cyan">Windows</span>
+          <span class="badge badge-gold">✔ Cracked Minecraft Supported</span>
+        </div>
+        <h1 class="title">AG <span class="title-accent">CraftNode</span></h1>
+        <p class="tagline">
+          Create, configure and run your <strong>own local Minecraft server</strong>
+          from a single desktop app — Java setup, plugins, tunnels and all.
+          Works with cracked Minecraft clients.
+        </p>
+
+        <div class="download-card" id="download">
+          <div class="download-card-head">
+            <img src="assets/icon.ico" alt="" class="dl-icon">
+            <div>
+              <div class="dl-name">AG CraftNode</div>
+              <div class="dl-meta">
+                <span class="chip">v0.0.1</span>
+                <span class="chip">ZIP</span>
+                <span class="chip" id="dl-size">~280 KB</span>
+                <span class="chip">Windows 10 / 11</span>
+              </div>
+            </div>
+          </div>
+          <a class="btn-download" href="downloads/AG-CraftNode-v0.0.1-Windows.zip"
+             download="AG-CraftNode-v0.0.1-Windows.zip">
+            <span class="btn-download-label">Download AG CraftNode</span>
+            <span class="btn-download-sub">v0.0.1 — free</span>
+          </a>
+          <p class="dl-note">
+            Requires <a href="https://www.python.org/downloads/" target="_blank" rel="noopener">Python 3.8+</a>
+            and <code>pip install PyQt6</code>.
+            Java runtimes, server JARs and tunnel tools are downloaded
+            <strong>automatically</strong> by the app on first run.
+          </p>
+        </div>
+      </div>
+
+      <div class="hero-console" aria-hidden="true">
+        <div class="console-titlebar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="console-title">AG CraftNode — server console</span>
+        </div>
+        <pre class="console-body" id="console-body"></pre>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section" id="features">
+      <div class="section-head">
+        <h2>Features</h2>
+        <p class="section-src" id="src-features"></p>
+      </div>
+      <div class="feature-grid" id="features-grid"></div>
+    </section>
+
+    <section class="section section-alt" id="quickstart">
+      <div class="section-head">
+        <h2>Quick Start</h2>
+        <p class="section-src" id="src-runlocally"></p>
+      </div>
+      <ol class="steps">
+        <li>
+          <span class="step-num">1</span>
+          <div><strong>Download</strong> the ZIP above and <strong>extract</strong> it anywhere on your PC.</div>
+        </li>
+        <li>
+          <span class="step-num">2</span>
+          <div>Install the UI dependency:
+            <pre class="code-block"><code>pip install PyQt6</code></pre>
+          </div>
+        </li>
+        <li>
+          <span class="step-num">3</span>
+          <div>Launch the app and create a server — pick a version, and CraftNode fetches the JAR + Java for you.</div>
+        </li>
+        <li>
+          <span class="step-num">4</span>
+          <div>Click <strong>Start</strong>, share your address, and play — cracked clients welcome.</div>
+        </li>
+      </ol>
+      <div id="runlocally-content" class="run-block"></div>
+    </section>
+
+    <section class="section" id="project">
+      <div class="section-head">
+        <h2>Project Structure</h2>
+        <p class="section-src" id="src-projectstructure"></p>
+      </div>
+      <div class="project-panel" id="projectstructure-content"></div>
+    </section>
+
+    <section class="section section-alt" id="notes">
+      <div class="section-head">
+        <h2>Notes</h2>
+        <p class="section-src" id="src-notes"></p>
+      </div>
+      <ul class="notes-list" id="notes-content"></ul>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <img src="assets/icon.ico" alt="" class="footer-logo">
+    <p>
+      <strong>AG CraftNode</strong> <span class="footer-version">v0.0.1</span> — local Minecraft server manager.
+      Not affiliated with Mojang or Microsoft.
+    </p>
+    <p class="fetch-status" id="fetch-status">Reading README.md…</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
