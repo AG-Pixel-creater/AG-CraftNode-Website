@@ -273,6 +273,13 @@ body {
   color: var(--text-dim);
 }
 .steps li strong { color: var(--text); }
+.steps code {
+  background: var(--bg-alt);
+  border: 1px solid var(--panel-edge);
+  padding: 0 5px;
+  font-size: 12px;
+  color: var(--green);
+}
 .step-num {
   flex: 0 0 auto;
   font-family: var(--font-pixel);

@@ -38,8 +38,6 @@ If you are using the project virtual environment:
 - This project is currently versioned as \`v0.0.1\`.
 `;
 
-const DOWNLOAD_FILE = "downloads/AG-CraftNode-v0.0.1-Windows.zip";
-
 /* ---------- helpers ---------- */
 
 function esc(s) {
@@ -228,21 +226,6 @@ function loadReadme() {
     .catch(() => renderReadme(FALLBACK_README, false));
 }
 
-/* ---------- download size (best effort) ---------- */
-
-function updateDownloadSize() {
-  const el = document.getElementById("dl-size");
-  fetch(DOWNLOAD_FILE, { method: "HEAD" })
-    .then(res => {
-      const len = parseInt(res.headers.get("Content-Length"), 10);
-      if (!len) return;
-      el.textContent = len > 1048576
-        ? (len / 1048576).toFixed(1) + " MB"
-        : Math.round(len / 1024) + " KB";
-    })
-    .catch(() => {});
-}
-
 /* ---------- hero console animation ---------- */
 
 const CONSOLE_LINES = [
@@ -272,5 +255,4 @@ function animateConsole() {
 }
 
 loadReadme();
-updateDownloadSize();
 animateConsole();
